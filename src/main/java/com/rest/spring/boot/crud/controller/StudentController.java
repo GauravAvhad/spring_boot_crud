@@ -9,6 +9,7 @@ public class StudentController {
 
 	@GetMapping
 	public String getHome(ModelAndView mav) {
+		System.out.println("This is student controller");
 		mav.addObject("welcome", "Welcome, User");
 		return "index";
 	}
