@@ -24,7 +24,6 @@ public class RestStudentController {
 
 	@GetMapping
 	public List<Student> findAll() {
-		System.out.println("rest controller");
 		return studentService.findAll();
 	}
 
