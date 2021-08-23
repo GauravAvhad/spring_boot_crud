@@ -10,6 +10,7 @@ public class StudentController {
 	@GetMapping
 	public String getHome(ModelAndView mav) {
 		mav.addObject("welcome", "Welcome, User");
+		System.out.println("this is student controller");
 		return "index";
 	}
 }
